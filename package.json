@@ -12,7 +12,8 @@
     "lint": "eslint .",
     "prettier": "prettier --check \"**/*.{js,jsx,ts,tsx}\"",
     "prettier:fix": "prettier --write \"**/*.{js,jsx,ts,tsx}\"",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "clear-cache": "bash ./scripts/clear.sh"
   },
   "jest": {
     "preset": "jest-expo"
@@ -38,6 +39,7 @@
     "expo-system-ui": "~4.0.7",
     "expo-web-browser": "~14.0.2",
     "i18n-js": "^4.5.1",
+    "nativewind": "^4.1.23",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-native": "0.76.6",
@@ -47,6 +49,7 @@
     "react-native-screens": "~4.4.0",
     "react-native-web": "~0.19.13",
     "react-native-webview": "13.12.5",
+    "tailwindcss": "^3",
     "zustand": "^5.0.3"
   },
   "devDependencies": {

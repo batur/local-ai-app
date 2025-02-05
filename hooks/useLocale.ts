@@ -3,11 +3,11 @@ import { useEffect, useCallback } from "react";
 
 import { I18n, Scope, TranslateOptions } from "i18n-js";
 import { getLocales } from "expo-localization";
-import { localeStore } from "stores";
+import { localeStore } from "../stores";
 
-import EN from "locales/en.json";
-import TR from "locales/tr.json";
-import AR from "locales/ar.json";
+import EN from "../locales/en.json";
+import TR from "../locales/tr.json";
+import AR from "../locales/ar.json";
 
 const i18n = new I18n({
   en: EN,
