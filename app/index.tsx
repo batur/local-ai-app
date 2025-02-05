@@ -2,9 +2,11 @@ import { Text, TouchableOpacity, View } from "react-native";
 
 import { format } from "date-fns";
 import { bearStore } from "stores";
+import { useLocale } from "hooks";
 
 export default function Index() {
   const { bears, increase, reset } = bearStore();
+  const { t } = useLocale();
 
   return (
     <View
@@ -27,6 +29,11 @@ export default function Index() {
       <TouchableOpacity onPress={reset} style={{ padding: 8, backgroundColor: "lightcoral" }}>
         <Text>Reset</Text>
       </TouchableOpacity>
+      <Text>
+        {t("welcome", {
+          name: "Batur",
+        })}
+      </Text>
     </View>
   );
 }
